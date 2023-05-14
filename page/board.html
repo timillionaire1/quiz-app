@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="board.css">
+</head>
+<body>
+    <nav id="nav-bar">
+        <img src="../quiz/wikiped.png" width="100px" height="100px">
+        <div id="toggle-page">
+            <!-- <i class="fa-sharp fa-xmark"></i> -->
+            <img id="times" src="../fa-times-removebg-preview.png" width="40px" height="40px">
+            <ul>
+                <li><a href="../test.html">Home</a></li>
+                <li><a href="javascript:void(0)">L.Board</a></li>
+                <li><a href="./info.html">Info</a></li>
+            </ul>
+        </div>
+        <img id="menu" src="../hamburger-removebg-preview.png" width="60px" height="60px">
+    </nav>
+    <section>
+        <h1 style="text-align:center;">Leadership Board</h1>
+    </section>
+    <footer>
+        <hr>
+        <div>
+            <p>Developed by Wikiped Digital</p>
+            <p><i>@2023 All Right Reserved</i></p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1017621991.js" crossorigin="anonymous"></script>
+    <script>
+        let menuBar = document.getElementById("menu");
+        let togglePage = document.getElementById("toggle-page");
+        let listElement = document.querySelectorAll("ul li")
+        let times = document.getElementById("times");
+        menuBar.onclick=function(){
+            togglePage.style.right="0"
+        }
+        times.onclick=function(){
+            togglePage.style.right="-200px";
+        }
+        listElement.forEach(n=>n.onclick=()=>{
+            // times.parentElement.remove();
+        })
+    </script>
+</body>
+</html>

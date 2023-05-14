@@ -1,0 +1,140 @@
+body{
+    /* background-color: #121212; */
+    background-image: url("./annie-spratt-g9KFpAfQ5bc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+form{
+    display:grid;
+    place-items:center;
+    /* background-color: #121212; */
+    border-radius:10px;
+    border:2px solid #121212;
+    margin: 30px auto;
+    width: 300px;
+    height:300px;
+    /* justify-items: center; */
+}
+#bio-section label{
+    float:left;
+}
+#bio-section button{
+    float:left;
+    margin-top: 2px;
+}
+#nav-bar{
+    position: -webkit-sticky;
+    /* position: sticky; */
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000000;
+    border-radius: 10px;
+    width: 100%;
+    height:60px;
+}
+#nav-bar div{
+    margin-right: 10px;
+}
+#nav-bar div img{
+    display: none;
+}
+#nav-bar #menu{
+    display: none;
+}
+
+ul{
+    display: flex;
+    gap:2rem;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#profile{
+    position: relative;
+    overflow: hidden;
+    /* background-color: aqua; */
+    width: 107px;
+    height:100px;
+}
+#avatar{
+    /* position:absolute; */
+    border-radius: 50%;
+    border:2px solid black;
+    cursor:pointer;
+    width:103px;
+    height:96px;
+}
+input{
+    outline: none;
+}
+input[type="file"]::file-selector-button{
+    position: absolute;
+    /* opacity: 6; */
+    z-index:1;
+    left:0;
+    bottom: 0;
+    opacity:0;
+    border-radius: 50%;
+    width:107px;
+    height:100px;
+    cursor:pointer;
+    /* max-width:100%; */
+}
+label{
+    text-align:right;
+}
+button{
+    cursor:pointer;
+    margin: 2px;
+}
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+footer{
+    /* margin: 0 auto; */
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+footer p{
+    text-align: center;
+}
+
+@media screen and (max-width:800px){
+    #nav-bar div{
+        /* display: none; */
+        position:absolute;
+        right:-200px;
+        top: 8px;
+        z-index: 2;
+        margin: 0;
+        width: 50%;
+        height: 50%;
+        background-color: #121212;
+        transition: 2s;
+    }
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #nav-bar div img{
+        display: block;
+    }
+    #nav-bar #menu{
+        display: block;
+    }
+}

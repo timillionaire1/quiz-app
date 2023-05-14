@@ -1,0 +1,227 @@
+#nav-bar{
+    position: -webkit-sticky;
+    /* position: sticky; */
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000000;
+    border-radius: 10px;
+    width: 100%;
+    height:60px;
+}
+#nav-bar div{
+    margin-right: 10px;
+}
+#nav-bar div img{
+    display: none;
+}
+#nav-bar #menu{
+    display: none;
+}
+
+ul{
+    display: flex;
+    gap:2rem;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.show{
+    display: block;
+    margin-top: 75px;
+}
+.hide{
+    display: none;
+}
+.end{
+    float:right;
+    border-radius: 50%;
+    background-color:black;
+    margin-top: 25px;
+}
+
+.count-down{
+    color:white;
+    padding: 5px;
+}
+.count-box{
+    display: none;
+}
+.quiz-box{
+    display:none;
+}
+.result-box{
+    display:none;
+}
+.center{
+    width: 250px;
+    margin: 0 auto;
+    /* background-color: #000000; */
+}
+.info{
+    margin:0 auto;
+    width: 400px;
+    height:50px;
+}
+p{
+    text-align: center;
+}
+.result-box{
+    margin:0 auto;
+}
+.question-text{
+    text-transform:capitalize;
+    font-weight:400 ;
+    padding:20px 0;
+}
+.option-container .option{
+    /* line-height:22px; */
+    position: relative;
+    text-transform:capitalize;
+    background-color:#cccccc;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding:5px 10px;
+    /* padding: 10px; */
+    animation:fade 0.3s ease;
+    cursor: pointer;
+    overflow-x: hidden;
+}
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+.option-container .option.correct::before{
+    position:absolute;
+    content:"";
+    background-color:green;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    border-radius:10px;
+    z-index:-1;
+    animation:swipe 0.5s ease forwards;
+}
+@keyframes swipe {
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+.option-container .option.correct{
+    color:#ffffff;
+}
+.option-container .option.wrong::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    background-color:red;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    z-index:-1;
+    animation:swipe 0.5s ease forwards;
+}
+@keyframes swipe {
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}
+.option-container .option.wrong{
+    color:#ffffff;
+}
+.option-container .option.already-answered{
+    pointer-events:none;
+}
+button{
+    margin: 10px 0;
+    padding:5px 15px;
+    cursor:pointer;
+    border-radius: 5px;
+    background-color: rgb(26, 26, 26);
+    color: #cccccc;
+}
+.answer-indicator-container{
+    display: flex;
+    /* gap:0.2rem; */
+}
+.answer-indicator-container .indicator{
+    margin:5px ;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color: lightgrey;
+    /* position: relative; */
+}
+.answer-indicator-container .indicator.correct{
+    background-color: green;
+    background-image:url("./mark-type.png");
+    background-size: cover;
+    /* width:20px; */
+    /* height:20px; */
+}
+.answer-indicator-container .indicator.wrong{
+    background-color: red;
+    background-image:url("./timetype.png");
+    background-size: cover;
+    /* width:20px; */
+    /* height:20px; */
+}
+#my-button{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+}
+#demo{
+    display:inline-block;
+    width:80px;
+    height:21px;
+    padding:8px 0px 2px 10px;
+    border-radius:5px;
+    /* background-color: #0f0f0f; */
+    color:#cccccc;
+    cursor: pointer;
+}
+@media screen and (max-width:800px){
+    #nav-bar div{
+        /* display: none; */
+        position:absolute;
+        right:-200px;
+        top: 8px;
+        z-index: 2;
+        margin: 0;
+        width: 50%;
+        height: 50%;
+        background-color: #121212;
+        transition: 2s;
+    }
+    #nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #nav-bar div img{
+        display: block;
+    }
+    #nav-bar #menu{
+        display: block;
+    }
+}
+
