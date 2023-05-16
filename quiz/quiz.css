@@ -253,6 +253,7 @@ footer p{
     }
     .custom-box div img{
         margin-top: 10px;
+        max-width: 100%;
     }
 }
 
