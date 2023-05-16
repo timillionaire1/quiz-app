@@ -21,16 +21,16 @@
         </div>
         <img id="menu" src="../hamburger-removebg-preview.png" width="60px" height="60px">
     </nav>
-    <div class="custom-box row">
-        <div class="info col-12 col-lg-6">
+    <div id="flip" class="custom-box">
+        <div class="info">
             <p>Welcome<span id="username"></span></p>
             <p>to</p>
             <p style="font-weight: bold; font-size: xx-large;">Who Want to Be a Millionaire?</p>
             <p>Please note that your grade point depends solely on the number of questions you attempt.</p>
-            <p><em>A Trial will convince... </em><br></p>
+            <p><em>A Trial will convince... </em></p>
             <p><button id="test" onclick="takeTest()"> Take Test</button></p>
         </div>
-        <!-- <div class="col-12 col-lg-6 text-center"><img src="../freetrial.jpg"></div> -->
+        <div><img src="../freetrial.jpg"></div>
     </div>
     <div class="count-box end">
         <div class="count-down">
@@ -89,6 +89,13 @@
         <button onclick="retryAll()">More Trial</button>
         <button onclick="backHome()">Back Home</button>
     </div>
+    <footer>
+        <hr>
+        <div>
+            <p>Developed by Wikiped Digital</p>
+            <p><i>@2023 All Right Reserved</i></p>
+        </div>
+    </footer>
     <script src="quiz.js"></script>
     <script src="quest.js"></script>
     <script src="https://kit.fontawesome.com/1017621991.js" crossorigin="anonymous"></script>

@@ -130,21 +130,11 @@ function myNext(){
         console.log("Mad-oh!");
         viewScore.innerHTML="View Score";
         viewScore.style.backgroundColor="#0f0f0f"
-        // viewScore.setAttribute("onclick", "myResult(this)");
-        // this.disabled=true;
-        // this.style.backgroundColor="#ffffff"
     }else{
         getNewQuestion();
     }
 }
 
-/*function myAttempt(){
-    if(answerIndicatorContainer.children[questionCounter-1].classList.add("correct") || 
-    answerIndicatorContainer.children[questionCounter-1].classList.add("wrong") ){
-        attempt++;
-        console.log(attempt)
-    }
-}*/
 function takeTest(){
     myTimer();
     countBox.classList.remove("count-box");

@@ -1,3 +1,4 @@
+
 #nav-bar{
     position: -webkit-sticky;
     /* position: sticky; */
@@ -44,7 +45,12 @@ li a{
     background-color:black;
     margin-top: 25px;
 }
-
+.custom-box{
+    display: flex;
+    /* gap: 5rem; */
+    margin-top: 20px;
+    /* margin:40px 10px; */
+}
 .count-down{
     color:white;
     padding: 5px;
@@ -59,14 +65,14 @@ li a{
     display:none;
 }
 .center{
-    width: 250px;
+    width: 205px;
     margin: 0 auto;
     /* background-color: #000000; */
 }
 .info{
     margin:0 auto;
     width: 400px;
-    height:50px;
+    /* background-color: #121212; */
 }
 p{
     text-align: center;
@@ -199,7 +205,22 @@ button{
     color:#cccccc;
     cursor: pointer;
 }
+footer{
+    /* margin: 0 auto; */
+    position: -webkit-sticky;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 65px;
+}
+footer p{
+    text-align: center;
+    /* color: white; */
+}
 @media screen and (max-width:800px){
+    body{
+        overflow-x: hidden;
+        /* overflow-y: scroll; */
+    }
     #nav-bar div{
         /* display: none; */
         position:absolute;
@@ -214,7 +235,7 @@ button{
     }
     #nav-bar ul{
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         margin-top: 50px;
     }
     #nav-bar div img{
@@ -222,6 +243,14 @@ button{
     }
     #nav-bar #menu{
         display: block;
+    }
+    .custom-box{
+        display: flex;
+        flex-direction: column;
+        /* gap: 2rem; */
+    }
+    .custom-box div img{
+        margin-top: 10px;
     }
 }
 
