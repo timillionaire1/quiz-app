@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
 body{
     /* background-color: #121212; */
     background-image: url("./annie-spratt-g9KFpAfQ5bc-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family:'Poppins'
 }
 html,body{
     margin:0;
