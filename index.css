@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
     /* background-color: #121212; */
     background-image: url("./annie-spratt-g9KFpAfQ5bc-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    font-family:'Poppins'
 }
 html,body{
     margin:0;
@@ -132,9 +134,9 @@ footer p{
         right:-200px;
         top: 8px;
         z-index: 2;
-        margin: 0;
+        margin:0;
         width: 50%;
-        height: 50%;
+        height: 300px;
         background-color: #121212;
         transition: 2s;
     }

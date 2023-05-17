@@ -20,6 +20,7 @@ function myTimer(){
 const quizBox = document.querySelector(".quiz-box");
 const countBox = document.querySelector(".count-box");
 const customBox = document.querySelector(".custom-box");
+const footerBox = document.querySelector(".footer");
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
@@ -136,6 +137,7 @@ function myNext(){
 }
 
 function takeTest(){
+    footerBox.classList.add("fixed");
     myTimer();
     countBox.classList.remove("count-box");
     customBox.classList.add("show");
