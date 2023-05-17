@@ -207,7 +207,7 @@ button{
 }
 footer{
     /* margin: 0 auto; */
-    position: -webkit-sticky;
+    /* position: -webkit-sticky; */
     bottom: 0px;
     width: 100%;
     padding-top: 65px;
