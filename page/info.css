@@ -37,7 +37,6 @@ li a{
     color: #ffffff;
     text-decoration: none;
 }
-
 footer{
     /* margin: 0 auto; */
     position: fixed;
@@ -47,8 +46,9 @@ footer{
 footer p{
     text-align: center;
 }
-
-
+.fa{
+    color: #000000;
+}
 @media screen and (max-width:800px){
     html,body{
         margin:0;
