@@ -6,6 +6,7 @@ myUsername.innerText=" "+userPrompt;
 const startingMinutes=1;
 let time=startingMinutes*60;
 const countDown=document.querySelector(".count-down");
+const myBtn=document.querySelector("#btn");
 
 function myTimer(){
     let timing=setInterval(() => {
@@ -13,6 +14,14 @@ function myTimer(){
         let seconds=time % 60;
         seconds=seconds<10?"0"+seconds : seconds;
         countDown.innerText=`${minutes} : ${seconds}`;
+        if(countDown.innerText == "0"+" : "+"00"){
+            alert("game over");
+            clearInterval(timing);
+            myBtn.classList.add("disengage");
+            optionContainer.classList.add("disengage");
+            viewScore.innerHTML="View Score";
+            viewScore.style.backgroundColor="#0f0f0f";
+        }
         time--;
     }, 1000);
 }
@@ -130,7 +139,8 @@ function myNext(){
     if(questionCounter===quiz.length){
         console.log("Mad-oh!");
         viewScore.innerHTML="View Score";
-        viewScore.style.backgroundColor="#0f0f0f"
+        viewScore.style.backgroundColor="#0f0f0f";
+        myBtn.classList.add("disengage");
     }else{
         getNewQuestion();
     }

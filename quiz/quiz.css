@@ -275,4 +275,6 @@ footer p{
         max-width: 100%;
     }
 }
-
+.disengage{
+    pointer-events: none;
+}
