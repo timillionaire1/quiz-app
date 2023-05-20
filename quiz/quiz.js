@@ -173,7 +173,17 @@ function myResult(result){
     resultBox.querySelector(".percentage").innerHTML=(((correctAnswers/(quiz.length)*100).toFixed()+"%"))
     resultBox.querySelector(".grade-point").innerHTML=((correctAnswers/(quiz.length)*5)).toFixed()+" out of 5.0";
 }
-
+/*function retryAll(){
+    questionCounter = 0;
+    correctAnswers=0;
+    attempt=0;
+    countBox.classList.remove("count-box");
+    resultBox.classList.add("hide");
+    quizBox.classList.remove("hide");
+    setAvailableQuestions();
+    getNewQuestion();
+    answerIndicator();
+}*/
 let menuBar = document.getElementById("menu");
 let togglePage = document.getElementById("toggle-page");
 let listElement = document.querySelectorAll("ul li")
