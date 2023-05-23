@@ -41,11 +41,12 @@ li a{
     text-decoration: none;
 }
 .show{
-    position:absolute;
+    position:relative;
     display: block;
-    width:100%;
+    /* width:100%; */
     margin-top: 75px;
-    margin-right:10px;
+    left:5px;
+    right:5px;
     z-index: -1;
 }
 .hide{
