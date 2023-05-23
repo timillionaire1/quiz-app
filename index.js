@@ -33,7 +33,7 @@ menuBar.onclick=function(){
     togglePage.style.right="0"
 }
 times.onclick=function(){
-    togglePage.style.right="-200px";
+    togglePage.style.right="-500px";
 }
 listElement.forEach(n=>n.onclick=()=>{
     // times.parentElement.remove();

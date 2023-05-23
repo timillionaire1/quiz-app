@@ -189,10 +189,10 @@ let togglePage = document.getElementById("toggle-page");
 let listElement = document.querySelectorAll("ul li")
 let times = document.getElementById("times");
 menuBar.onclick=function(){
-    togglePage.style.right="0"
+    togglePage.style.right="0";
 }
 times.onclick=function(){
-    togglePage.style.right="-200px";
+    togglePage.style.right="-500px";
 }
 listElement.forEach(n=>n.onclick=()=>{
     // times.parentElement.remove();

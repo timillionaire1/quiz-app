@@ -41,10 +41,13 @@ li a{
     text-decoration: none;
 }
 .show{
+    position:absolute;
     display: block;
+    width:100%;
     margin-top: 75px;
-    margin-left: 5px;
-    margin-right:5px;
+    margin-left: 10px;
+    margin-right:10px;
+    z-index: -1;
 }
 .hide{
     display: none;
@@ -250,14 +253,14 @@ footer p{
     #nav-bar div{
         /* display: none; */
         position:absolute;
-        right:-200px;
+        right:-500px;
         top: 8px;
         z-index: 2;
         margin: 0;
         width: 50%;
         height:300px;
         background-color: #121212;
-        transition: 2s;
+        transition: 1.5s;
     }
     #nav-bar ul{
         display: flex;

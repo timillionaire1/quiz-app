@@ -60,14 +60,14 @@ footer p{
     #nav-bar div{
         /* display: none; */
         position:absolute;
-        right:-200px;
+        right:-500px;
         top: 8px;
         z-index: 2;
         margin: 0;
         width: 50%;
         height:300px;
         background-color: #121212;
-        transition: 2s;
+        transition: 1.5s;
     }
     #nav-bar ul{
         display: flex;
