@@ -64,6 +64,12 @@ function getNewQuestion(){
     const index1=availableQuestions.indexOf(questionIndex);
     availableQuestions.splice(index1,1);
 
+    if(currentQuestion.hasOwnProperty("img")){
+        const img = document.createElement("img");
+        img.src=currentQuestion.img;
+        questionText.appendChild(img);
+    }
+
     const optionLen = currentQuestion.options.length;
 
     for(let i=0; i<optionLen; i++){
