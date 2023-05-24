@@ -7,6 +7,7 @@ html,body{
     width: 100%;
     height:100%;
     overflow-x: hidden;
+    /* overflow-y: auto; */
 }
 #nav-bar{
     position: sticky;
@@ -213,13 +214,17 @@ button{
     align-items: center;
     gap:0.5rem;
 }
+.my-button2{
+    width: auto;
+    background-color: rgb(26, 26, 26);
+    border-radius:5px;
+}
 #demo{
     display:inline-block;
-    width:80px;
-    height:21px;
+    width:100%;
+    /* height:21px; */
     /* padding:8px 0px 2px 10px; */
     padding: 5px;
-    border-radius:5px;
     /* background-color: #0f0f0f; */
     color:#cccccc;
     cursor: pointer;
@@ -238,6 +243,9 @@ footer p{
 }
 .fixed{
     position: fixed;
+}
+#identity{
+    display: block;
 }
 @media screen and (max-width:800px){
     html,body{

@@ -48,7 +48,13 @@ footer{
 footer p{
     text-align: center;
 }
-
+section img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+}
 
 @media screen and (max-width:800px){
     html,body{

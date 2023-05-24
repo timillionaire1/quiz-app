@@ -1,6 +1,6 @@
 
 let myUsername=document.getElementById("username");
-let userPrompt=prompt("Kindly type your brand name").toUpperCase();
+let userPrompt=prompt("Kindly type your Nickname").toUpperCase();
 myUsername.innerText=" "+userPrompt;
 
 const startingMinutes=1;
@@ -17,10 +17,11 @@ function myTimer(){
         if(countDown.innerText == "0"+" : "+"00"){
             alert("game over");
             clearInterval(timing);
+            scoreButton.classList.add("my-button2");
             myBtn.classList.add("disengage");
             optionContainer.classList.add("disengage");
             viewScore.innerHTML="View Score";
-            viewScore.style.backgroundColor="#0f0f0f";
+            // viewScore.style.backgroundColor="#0f0f0f";
         }
         time--;
     }, 1000);
@@ -35,6 +36,7 @@ const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
 const answerIndicatorContainer = document.querySelector(".answer-indicator-container");
 const myInput = document.querySelector(".input");
+const scoreButton = document.getElementById("my-button2");
 const viewScore = document.getElementById("demo");
 const myClick = document.getElementsByClassName("button");
 const resultBox = document.querySelector(".result-box");
@@ -67,6 +69,7 @@ function getNewQuestion(){
     if(currentQuestion.hasOwnProperty("img")){
         const img = document.createElement("img");
         img.src=currentQuestion.img;
+        img.id="identity"
         questionText.appendChild(img);
     }
 
@@ -144,8 +147,9 @@ function updateAnswerIndicator(marktype){
 function myNext(){
     if(questionCounter===quiz.length){
         console.log("Mad-oh!");
+        scoreButton.classList.add("my-button2");
         viewScore.innerHTML="View Score";
-        viewScore.style.backgroundColor="#0f0f0f";
+        // viewScore.style.backgroundColor="#0f0f0f";
         myBtn.classList.add("disengage");
     }else{
         getNewQuestion();
@@ -153,7 +157,8 @@ function myNext(){
 }
 
 function takeTest(){
-    footerBox.classList.add("fixed");
+    // footerBox.classList.add("fixed");
+    footerBox.classList.add("hide");
     myTimer();
     countBox.classList.remove("count-box");
     customBox.classList.add("show");
@@ -166,6 +171,8 @@ function takeTest(){
     answerIndicator();
 }
 function myResult(result){
+    footerBox.classList.remove("hide");
+    footerBox.classList.add("fixed");
     countBox.classList.add("count-box");
     quizBox.classList.add("hide");
     resultBox.classList.remove("result-box");
@@ -190,6 +197,14 @@ function myResult(result){
     getNewQuestion();
     answerIndicator();
 }*/
+function retryAll(){
+    window.location.reload();
+}
+function backHome(){
+    let stateObj={id:"10"};
+    window.history.replaceState(stateObj, "page 2", "../index.html");
+    window.location.reload();
+}
 let menuBar = document.getElementById("menu");
 let togglePage = document.getElementById("toggle-page");
 let listElement = document.querySelectorAll("ul li")

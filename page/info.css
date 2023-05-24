@@ -39,7 +39,7 @@ li a{
 }
 footer{
     /* margin: 0 auto; */
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     width: 100%;
 }
@@ -48,6 +48,13 @@ footer p{
 }
 .fa{
     color: #000000;
+}
+section img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
 }
 @media screen and (max-width:800px){
     html,body{
