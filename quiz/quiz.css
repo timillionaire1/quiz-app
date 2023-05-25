@@ -182,6 +182,7 @@ button{
     border-radius: 5px;
     background-color: rgb(26, 26, 26);
     color: #cccccc;
+    outline: none;
 }
 .answer-indicator-container{
     display: flex;
@@ -246,6 +247,9 @@ footer p{
 }
 #identity{
     display: block;
+}
+.result-box div button{
+    outline: none;
 }
 @media screen and (max-width:800px){
     html,body{

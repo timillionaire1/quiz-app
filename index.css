@@ -128,7 +128,7 @@ footer p{
         position:absolute;
         right:-500px;
         top: 8px;
-        z-index: 2;
+        z-index: 1;
         margin:0;
         width: 50%;
         height: 300px;
