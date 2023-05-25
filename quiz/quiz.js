@@ -211,9 +211,12 @@ let listElement = document.querySelectorAll("ul li")
 let times = document.getElementById("times");
 menuBar.onclick=function(){
     togglePage.style.right="0";
+    // quizBox.classList.add("under");
 }
 times.onclick=function(){
     togglePage.style.right="-500px";
+    // quizBox.classList.remove("under");
+    // quizBox.classList.add("over");
 }
 listElement.forEach(n=>n.onclick=()=>{
     // times.parentElement.remove();

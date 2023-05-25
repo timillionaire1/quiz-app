@@ -11,8 +11,11 @@ function myImage(input){
         };
     if (input.files[0]){
         reader.readAsDataURL(input.files[0]);
+        demo.innerText="You're Welcome";
     }
 }
+
+// let myProfile = document.querySelector("#profile");
 /*
 function myImage(input){
     // let selectedImages = userInput.files;
@@ -30,10 +33,13 @@ let togglePage = document.getElementById("toggle-page");
 let listElement = document.querySelectorAll("ul li")
 let times = document.getElementById("times");
 menuBar.onclick=function(){
-    togglePage.style.right="0"
+    togglePage.style.right="0";
+    // myProfile.classList.add("hide");
 }
 times.onclick=function(){
     togglePage.style.right="-500px";
+    // myProfile.classList.remove("hide");
+    // myProfile.classList.add("show");
 }
 listElement.forEach(n=>n.onclick=()=>{
     // times.parentElement.remove();
